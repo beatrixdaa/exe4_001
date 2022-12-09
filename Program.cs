@@ -4,19 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace exe4_001
+namespace Exe4_001
 {
     class Stacks
     {
         private string[] Beatrix;
         private int top;
         private int max;
+
         public Stacks()
         {
             Beatrix = new string[21];
             top = -1;
             max = 21;
         }
+
         public void push()
         {
             string Data;
@@ -28,10 +30,20 @@ namespace exe4_001
             {
                 Console.WriteLine("Masukkan Element");
                 Data = Console.ReadLine();
-                top = top = 1;
+                top = top + 1;
                 Beatrix[top] = Data;
+                Console.WriteLine("Data telah di Push");
+            }
+        }
+        public void pop()
+        {
+            if (top == -1)
+            {
 
             }
         }
     }
 }
+
+
+

@@ -11,5 +11,10 @@ namespace exe4_001
         private string[] Beatrix;
         private int top;
         private int max;
+        public Stacks()
+        {
+            Beatrix = new string[21];
+        }
+
     }
 }

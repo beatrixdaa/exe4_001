@@ -39,6 +39,12 @@ namespace Exe4_001
         {
             if (top == -1)
             {
+                Console.WriteLine("Tidak ada Elemen yang bisa di Delete");
+            }
+            else
+            {
+                top = top - 1;
+                Console.Write("Element telah di Delete");
 
             }
         }

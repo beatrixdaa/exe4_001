@@ -48,6 +48,13 @@ namespace Exe4_001
 
             }
         }
+        public void Display()
+        {
+            for (int i = top; i >= 0; i --)
+            {
+                Console.WriteLine(Beatrix[i]);
+            }
+        }
     }
 }
 

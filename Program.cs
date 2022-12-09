@@ -54,6 +54,19 @@ namespace Exe4_001
             {
                 Console.WriteLine(Beatrix[i]);
             }
+            if (top == -1)
+            {
+                Console.WriteLine("Stack Kosong");
+            }
+        }
+
+        static void Main (string[] args)
+        {
+            Stacks s = new Stacks ();
+            while(true)
+            {
+                Console.WriteLine();
+            }
         }
     }
 }

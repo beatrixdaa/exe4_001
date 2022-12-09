@@ -24,7 +24,14 @@ namespace exe4_001
             {
                 Console.WriteLine("\nMaksimal Element");
             }
+            else
+            {
+                Console.WriteLine("Masukkan Element");
+                Data = Console.ReadLine();
+                top = top = 1;
+                Beatrix[top] = Data;
 
+            }
         }
     }
 }

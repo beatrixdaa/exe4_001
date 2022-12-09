@@ -14,6 +14,8 @@ namespace exe4_001
         public Stacks()
         {
             Beatrix = new string[21];
+            top = -1;
+            max = 21;
         }
 
     }

@@ -50,7 +50,7 @@ namespace Exe4_001
         }
         public void Display()
         {
-            for (int i = top; i >= 0; i --)
+            for (int i = top; i >= 0; i--)
             {
                 Console.WriteLine(Beatrix[i]);
             }
@@ -60,14 +60,39 @@ namespace Exe4_001
             }
         }
 
-        static void Main (string[] args)
+        static void Main(string[] args)
         {
-            Stacks s = new Stacks ();
-            while(true)
+            Stacks s = new Stacks();
+            while (true)
             {
                 Console.WriteLine();
+                Console.WriteLine("\n**Stack Menu**\n");
+                Console.WriteLine("1. Push. ");
+                Console.WriteLine("2. Pop. ");
+                Console.WriteLine("3.Display. ");
+                Console.WriteLine(" 4.Exit. ");
+                Console.Write("\nMasukkan Pilihan : ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        s.push();
+                        break;
+                    case '2':
+                        s.pop();
+                        break;
+                    case '3':
+                        s.Display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nPilihan Salah ");
+                        break;
+                }
             }
-        }
+        } 
     }
 }
 

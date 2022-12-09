@@ -17,6 +17,14 @@ namespace exe4_001
             top = -1;
             max = 21;
         }
-
+        public void push()
+        {
+            string Data;
+            if (top == max - 1)
+            {
+                Console.WriteLine("\nMaksimal Element");
+            }
+            
+        }
     }
 }

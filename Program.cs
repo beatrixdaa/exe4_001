@@ -24,7 +24,7 @@ namespace exe4_001
             {
                 Console.WriteLine("\nMaksimal Element");
             }
-            
+
         }
     }
 }
